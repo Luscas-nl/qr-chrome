@@ -10,9 +10,13 @@
     class="bg-zinc-950 text-zinc-100 flex items-center justify-center"
   >
     <div
-      class="w-80 bg-zinc-900/80 backdrop-blur shadow-lg p-5 flex flex-col items-center gap-4 border border-zinc-800"
+      class="w-80 bg-zinc-900/80 backdrop-blur shadow-lg p-5 flex flex-col items-center gap-4 border border-zinc-800 relative"
     >
       <h1 class="text-lg font-semibold tracking-tight">QR Code Generator</h1>
+
+      <div class="absolute top-4 left-4">
+        <img class="w-8 h-8" src="/icons/e-icon.png" alt="">
+      </div>
 
       <div class="bg-white flex items-center justify-center p-3 rounded-xl shadow-inner">
         <img class="w-40 h-40" id="qr" alt="QR Code" />

@@ -7,16 +7,14 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": "/src",
-    }
+    },
   },
   plugins: [
     tailwindcss(),
     viteStaticCopy({
       targets: [
-        {
-          src: "manifest.json",
-          dest: ".",
-        },
+        {src: "manifest.json", dest: ".", },
+        {src: 'icons', dest: '.'}
       ],
     }),
   ],
